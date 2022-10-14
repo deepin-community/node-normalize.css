@@ -1,0 +1,18 @@
+#!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+export DH_VERBOSE=1
+
+%:
+	dh $@
+
+normalize.min.css: normalize.css
+	cleancss -O2 $< -o $@
+
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -f normalize.min.css
+
+override_dh_auto_build: normalize.min.css
+	dh_auto_build

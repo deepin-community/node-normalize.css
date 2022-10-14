@@ -1,0 +1,35 @@
+From e57f09cba8a5ff5fb80f778f68ef79dcdab48997 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Bastien=20ROUCARI=C3=88S?= <roucaries.bastien@gmail.com>
+Date: Mon, 14 May 2018 22:29:13 +0200
+Subject: Use local svg instead of online service for image
+
+forwarded: not needed
+---
+ test.html | 2 +-
+ test.svg  | 4 ++++
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+ create mode 100644 test.svg
+
+diff --git a/test.html b/test.html
+index 4a3ec99..082c6a6 100644
+--- a/test.html
++++ b/test.html
+@@ -330,7 +330,7 @@
+       }
+     </style>
+     <p><button>button</button></p>
+-    <p><input type="image" src="//placehold.it/90x24" alt="input (image)"></p>
++    <p><input type="image" src="test.svg" alt="input (image)"></p>
+     <p><input type="button" value="input (button)"></p>
+     <p><input type="file" value="input (file)"></p>
+     <p><input type="reset" value="input (reset)"></p>
+diff --git a/test.svg b/test.svg
+new file mode 100644
+index 0000000..c7c8fa4
+--- /dev/null
++++ b/test.svg
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="utf-8"?>
++<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="90" height="24">
++  <rect width="90" height="24" style="fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)" />
++</svg>

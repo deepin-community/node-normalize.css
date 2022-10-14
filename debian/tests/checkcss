@@ -1,0 +1,5 @@
+#!/bin/sh
+set -e
+for f in /usr/share/javascript/normalize.css/*.css; do
+    csslint-0.6 $f;
+done

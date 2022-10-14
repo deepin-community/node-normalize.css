@@ -1,0 +1,23 @@
+From d4b9195e86de9d66c7933b5262caf3d2ccf229cd Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Bastien=20ROUCARI=C3=88S?= <roucaries.bastien@gmail.com>
+Date: Mon, 14 May 2018 22:20:54 +0200
+Subject: Use local html5shiv
+
+Forwarded: not needed
+---
+ test.html | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/test.html b/test.html
+index 615b083..4a3ec99 100644
+--- a/test.html
++++ b/test.html
+@@ -3,7 +3,7 @@
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <title>Normalize CSS: UI tests</title>
+-<script src="https://rawgit.com/aFarkas/html5shiv/gh-pages/dist/html5shiv.min.js"></script>
++<script src="../../../javascript/html5shiv/html5shiv.min.js"></script>
+ <link rel="stylesheet" href="normalize.css">
+ <style>
+   /*! suit-test v0.1.0 | MIT License | github.com/suitcss */

@@ -1,0 +1,24 @@
+From 1e3fbf81929e69e9e644e7b5f6c391d0aaff4472 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?Bastien=20ROUCARI=C3=88S?= <roucaries.bastien@gmail.com>
+Date: Tue, 15 May 2018 11:39:17 +0200
+Subject: Use local installed css
+
+Forwarded: not-needed
+---
+ test.html | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+
+Index: node-normalize.css/test.html
+===================================================================
+--- node-normalize.css.orig/test.html
++++ node-normalize.css/test.html
+@@ -4,8 +4,7 @@
+ <meta name="viewport" content="width=device-width,initial-scale=1" />
+ <title>Normalize CSS: UI tests</title>
+ <script src="../../../javascript/html5shiv/html5shiv.min.js" type="javascript"></script>
+-<script src="file:///usr/share/javascript/html5shiv/html5shiv.min.js" type="javascript"></script>
+-<link rel="stylesheet" href="normalize.css" />
++<link rel="stylesheet" href="../../../javascript/normalize.css/normalize.min.css" />
+ <style type="text/css">
+   /*! suit-test v0.1.0 | MIT License | github.com/suitcss */
+ 

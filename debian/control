@@ -1,0 +1,26 @@
+Source: node-normalize.css
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Uploaders: Daniel Ring <dring@wolfishly.me>
+Section: javascript
+Priority: optional
+Build-Depends: debhelper-compat (= 13)
+ , cleancss
+Standards-Version: 4.6.0
+Vcs-Browser: https://salsa.debian.org/js-team/node-normalize.css
+Vcs-Git: https://salsa.debian.org/js-team/node-normalize.css.git
+Homepage: https://necolas.github.io/normalize.css
+Rules-Requires-Root: no
+
+Package: node-normalize.css
+Architecture: all
+Multi-Arch: foreign
+Depends: ${misc:Depends}
+Recommends: javascript-common
+Suggests: libjs-html5shiv
+Provides: libjs-normalize.css (= ${source:Version})
+Description: Modern alternative to CSS resets
+ Normalize.css makes browsers render all elements more consistently and in
+ line with modern standards. It precisely targets only the styles that need
+ normalizing.
+ .
+ Node.js is an event-based server-side JavaScript engine.
